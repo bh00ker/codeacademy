@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+
+	<script>
+	var user = {
+		first_name: 'Joe@Blah',
+		last_name: 'Smith',
+		sayHello: function() { console.log("Hello")}
+
+	};
+
+	var objectArray = user.first_name.split('@');
+	console.log(objectArray[0])
+	
+
+	var User = function(first_name,last_name,email) {
+		this.firstname = first_name;
+		this.last_name = last_name;
+		this.email = email;
+	}
+
+	var billy = new User ('Billy', 'Bob', 'billy@bob.com')
+
+	console.log(billy.last_name)
+
+	</script>
+
+	<style>
+	.red-text {
+		color: red;
+	}
+	</style>
+
+</head>
+
+<body>
+	<h1 id='main-heading' class="someclass">This is a heading</h1>
+
+	<p class='para'>Lorslkjsd;l klj kk kls slklkslklkdj
+	lkjl;sdj asklks sskljd sk dsk kkk kkskjdsd ;
+	#lskdl skjkdjs 
+	 klksjd kljsdj l</p>
+
+
+	<p class='para'>Lorslkjsd;l klj kk kls slklkslklkdj
+	lkjl;sdj asklks sskljd sk dsk kkk kkskjdsd ;
+	#lskdl skjkdjs 
+	 klksjd kljsdj l</p>
+
+	 <p class='para'>Lorslkjsd;l klj kk kls slklkslklkdj
+	lkjl;sdj asklks sskljd sk dsk kkk kkskjdsd ;
+	#lskdl skjkdjs 
+	 klksjd kljsdj l</p>
+
+	<script>
+	var h = document.querySelector('h1');
+
+	var addRedClass = function() {
+		h.className = h.className + " red-text";
+
+	//var removeRedClass = function() {
+	//	h.className = h.className + " red-text";
+	}
+
+	h.addEventListener('onclick', addRedClass);
+	//h.addEventListener('onmouseover', removeRedClass);
+
+	</script>
+
+
+</body>
+</html>
